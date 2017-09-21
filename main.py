@@ -22,9 +22,7 @@ def drive_backwards():
     b_motor.run_timed(time_sp=6000, speed_sp=750)
 
 message('Starting my motors!')
-sleep(2)
-drive_forward()
+drive_forward().wait()
 
-message('Reversing directions!')
-sleep(2)
+message('Reversing directions!').wait()
 drive_backwards()
