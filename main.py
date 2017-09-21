@@ -20,8 +20,7 @@ def drive_backwards():
     b_motor.run_timed(time_sp=6000, speed_sp=750)
 
 
-message('hello SPENSER!')
-message('Zachary does not like me')
+Sound.speak('Howdy, Grayson!!! What are you doing???', espeak_opts=-'s130')
 
 
 
