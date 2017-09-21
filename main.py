@@ -13,18 +13,18 @@ def message(speak):
 
 
 def drive_forward():
-    a_motor.run_timed(time_sp=3000, speed_sp=-750)
-    b_motor.run_timed(time_sp=3000, speed_sp=-750)
+    a_motor.run_timed(time_sp=6000, speed_sp=-750)
+    b_motor.run_timed(time_sp=6000, speed_sp=-750)
 
 
 def drive_backwards():
-    a_motor.run_timed(time_sp=3000, speed_sp=750)
-    b_motor.run_timed(time_sp=3000, speed_sp=750)
+    a_motor.run_timed(time_sp=6000, speed_sp=750)
+    b_motor.run_timed(time_sp=6000, speed_sp=750)
 
 message('Starting my motors!')
-sleep(4)
+sleep(2)
 drive_forward()
 
-sleep(4)
 message('Reversing directions!')
+sleep(2)
 drive_backwards()
