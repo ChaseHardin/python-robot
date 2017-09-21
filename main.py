@@ -20,7 +20,8 @@ def drive_backwards():
     b_motor.run_timed(time_sp=6000, speed_sp=750)
 
 
-Sound.speak('Howdy, Grayson!!! What are you doing???', espeak_opts=-'s130')
+Sound.speak('Howdy, Grayson!!! What are you doing???')
+Sound.speak('Hello Momma!!! What are you doing???')
 
 
 
