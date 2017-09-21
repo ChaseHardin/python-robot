@@ -21,6 +21,7 @@ def drive_backwards():
 
 
 Sound.speak('Howdy, Grayson!!! What are you doing???').wait()
+sleep(2)
 Sound.speak('Hello Momma!!! What are you doing???').wait()
 
 
