@@ -21,8 +21,8 @@ def drive_backwards():
     a_motor.run_timed(time_sp=6000, speed_sp=750)
     b_motor.run_timed(time_sp=6000, speed_sp=750)
 
-message('Starting my motors!').wait()
-drive_forward()
+message('Starting my motors!')
+drive_forward().wait()
 
 # message('Reversing directions!').wait()
 # drive_backwards()
