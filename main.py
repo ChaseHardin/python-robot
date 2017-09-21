@@ -1,3 +1,5 @@
+from time import sleep
+
 from ev3dev.ev3 import *
 
 a_motor = LargeMotor('outA')
@@ -20,6 +22,9 @@ def drive_backwards():
     b_motor.run_timed(time_sp=3000, speed_sp=750)
 
 message('Starting my motors!')
+sleep(4)
 drive_forward()
+
+sleep(4)
 message('Reversing directions!')
 drive_backwards()
