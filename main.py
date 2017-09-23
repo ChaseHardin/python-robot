@@ -10,6 +10,7 @@ def move(time_sp, speed_sp):
 
 
 Sound.tone([(3000, 2000, 400), (800, 1800, 2000)]).wait()
+Sound.speak('Chase is cool').wait()
 
 move(time_sp=5000, speed_sp=-750)
 a_motor.wait_while('running')
