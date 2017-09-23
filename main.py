@@ -20,15 +20,9 @@ def drive_backwards():
     b_motor.run_timed(time_sp=6000, speed_sp=750)
 
 
-message('Starting the motors... please keep your hands inside of the vehicle')
-sleep(2)
+Sound.speak('Hello, Chase').wait()
 
-drive_forward()
-sleep(2)
-message('Driving backwards')
-drive_backwards()
-sleep(2)
-message('Thanks for riding the mindstorm robot.')
+a_motor.run_timed(time_sp=1000, speed_sp=-750)
+b_motor.run_timed(time_sp=1000, speed_sp=-750)
 
-# message('Reversing directions!').wait()
-# drive_backwards()
+Sound.speak('I am done...').wait()
