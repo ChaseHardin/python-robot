@@ -23,8 +23,10 @@ def drive_backwards():
 Sound.speak('Hello, Chase').wait()
 sleep(2)
 
-a_motor.run_timed(time_sp=1000, speed_sp=-750)
-b_motor.run_timed(time_sp=1000, speed_sp=-750)
+drive_forward()
 
 sleep(2)
 Sound.speak('I am done...').wait()
+sleep(2)
+
+drive_backwards()
