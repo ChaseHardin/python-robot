@@ -1,4 +1,3 @@
-from time import sleep
 
 from ev3dev.core import LargeMotor
 
@@ -10,9 +9,7 @@ class DriveCommand:
     def forward(self):
         self.a_motor.run_timed(time_sp=6000, speed_sp=-750)
         self.b_motor.run_timed(time_sp=6000, speed_sp=-750)
-        sleep(2)
 
     def backwards(self):
         self.a_motor.run_timed(time_sp=6000, speed_sp=750)
         self.b_motor.run_timed(time_sp=6000, speed_sp=750)
-        sleep(2)
